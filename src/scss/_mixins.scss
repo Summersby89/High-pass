@@ -1,0 +1,53 @@
+@import "_vars.scss";
+
+@mixin grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $gap;
+}
+
+@mixin subheading {
+  font-family: 'TTFirsNeue';
+  font-weight: 700;
+  font-size: $subheading-font-size;
+  line-height: $subheading-line-height;
+}
+
+@mixin prime-text {
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: $prime-font-size;
+  line-height: $prime-line-height;
+}
+
+@mixin btn {
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: $white-color;
+  background: $orange-color;
+  transition: background .2s ease-in, border-color .2s ease-in;
+}
+
+@mixin small-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: $prime-font-size;
+  line-height: $prime-line-height;
+}
+
+@mixin card-tag {
+  padding: 7px 16px;
+  position: absolute;
+  top: 22px;
+  right: 13px;
+  z-index: 2;
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  background: $black-secondary-color;
+}
+
+@mixin mobile-text {
+  font-size: $small-font-size;
+  line-height: $mobile-line-height;
+}
+
